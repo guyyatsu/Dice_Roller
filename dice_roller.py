@@ -1,4 +1,4 @@
-import random
+from random import randint
 
 repeat = True
 
@@ -14,7 +14,7 @@ while repeat == True:
             print('ERROR! Please only use valid integers. ')
 
         while counter_tics < int(how_many):
-            roll = random.randint(1, dice)
+            roll = randint(1, dice)
             counter_tics += 1
             print('You rolled a ' + str(roll) + '!')
             if counter_tics == int(how_many):
